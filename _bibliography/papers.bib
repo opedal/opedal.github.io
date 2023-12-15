@@ -3,82 +3,107 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{opedal2023lct,
+    abbr={EMNLP},
+  title = "An Exploration of Left-Corner Transformations",
+  author = "Opedal*, Andreas  and
+      Tsipidi*, Eleftheria  and
+      Pimentel, Tiago  and
+      Cotterell, Ryan  and
+      Vieira, Tim",
+  booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  month = dec,
+  year = "2023",
+  address = "Singapore",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2023.emnlp-main.827",
+  pages = "13393--13427",
+  abstract="The left-corner transformation (Rosenkrantz and Lewis, 1970) is used to remove left recursion from context-free grammars, which is an important step towards making the grammar parsable top-down with simple techniques. This paper generalizes prior left-corner transformations to support semiring-weighted production rules and to provide finer-grained control over which left corners may be moved. Our generalized left-corner transformation (GLCT) arose from unifying the left-corner transformation and speculation transformation (Eisner and Blatz, 2007), originally for logic programming. Our new transformation and speculation define equivalent weighted languages. Yet, their derivation trees are structurally different in an important way: GLCT replaces left recursion with right recursion, and speculation does not. We also provide several technical results regarding the formal relationships between the outputs of GLCT, speculation, and the original grammar. Lastly, we empirically investigate the efficiency of GLCT for left-recursion elimination from grammars of nine languages. Code: https://github.com/rycolab/left-corner",
+  selected={true},
+  pdf={https://aclanthology.org/2023.emnlp-main.827.pdf},
+  bibtex_show={true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{opedal-etal-2023-world,
+    abbr={ACL},
+    title = "World Models for Math Story Problems",
+    author = "Opedal, Andreas  and
+      Stoehr, Niklas  and
+      Saparov, Abulhair  and
+      Sachan, Mrinmaya",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.579",
+    doi = "10.18653/v1/2023.findings-acl.579",
+    pages = "9088--9115",
+    abstract = "Solving math story problems is a complex task for students and NLP models alike, requiring them to understand the world as described in the story and reason over it to compute an answer. Recent years have seen impressive performance on automatically solving these problems with large pre-trained language models and innovative techniques to prompt them. However, it remains unclear if these models possess accurate representations of mathematical concepts. This leads to lack of interpretability and trustworthiness which impedes their usefulness in various applications. In this paper, we consolidate previous work on categorizing and representing math story problems and develop MathWorld, which is a graph-based semantic formalism specific for the domain of math story problems. With MathWorld, we can assign world models to math story problems which represent the situations and actions introduced in the text and their mathematical relationships. We combine math story problems from several existing datasets and annotate a corpus of 1,019 problems and 3,204 logical forms with MathWorld. Using this data, we demonstrate the following use cases of MathWorld: (1) prompting language models with synthetically generated question-answer pairs to probe their reasoning and world modeling abilities, and (2) generating new problems by using the world models as a design space.",
+    selected={true},
+    pdf={https://aclanthology.org/2023.findings-acl.579.pdf},
+    bibtex_show={true}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+@inproceedings{opedal-etal-2023-efficient,
+    abbr={ACL},
+    title = "Efficient Semiring-Weighted {E}arley Parsing",
+    author = "Opedal, Andreas  and
+      Zmigrod, Ran  and
+      Vieira, Tim  and
+      Cotterell, Ryan  and
+      Eisner, Jason",
+    booktitle = "Proceedings of the Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    url = "https://aclanthology.org/2023.acl-long.204",
+    doi = "10.18653/v1/2023.acl-long.204",
+    abstract="We present Earley’s (1970) context-free parsing algorithm as a deduction system, incorporating various known and new speed-ups. In particular, our presentation supports a known worst-case runtime improvement from Earley’s (1970) O(N3|G||R|), which is unworkable for the large grammars that arise in natural language processing, to O(N3|G|), which matches the complexity of CKY on a binarized version of the grammar G. Here N is the length of the sentence, |R| is the number of productions in G, and |G| is the total length of those productions. We also provide a version that achieves runtime of O(N3|M|) with |M| ≤ |G| when the grammar is represented compactly as a single finite-state automaton M (this is partly novel). We carefully treat the generalization to semiring-weighted deduction, preprocessing the grammar like Stolcke (1995) to eliminate the possibility of deduction cycles, and further generalize Stolcke’s method to compute the weights of sentence prefixes. We also provide implementation details for efficient execution, ensuring that on a preprocessed grammar, the semiring-weighted versions of our methods have the same asymptotic runtime and space requirements as the unweighted methods, including sub-cubic runtime on some grammars.",
+    pdf={https://aclanthology.org/2023.acl-long.204.pdf},
+    selected={true},
+    bibtex_show={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{keidar-etal-2022-slangvolution,
+    abbr={ACL},
+    title = "Slangvolution: {A} Causal Analysis of Semantic Change and Frequency Dynamics in Slang",
+    author = "Keidar*, Daphna  and
+      Opedal*, Andreas  and
+      Jin, Zhijing  and
+      Sachan, Mrinmaya",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.101",
+    doi = "10.18653/v1/2022.acl-long.101",
+    pages = "1422--1442",
+    abstract = "Languages are continuously undergoing changes, and the mechanisms that underlie these changes are still a matter of debate. In this work, we approach language evolution through the lens of causality in order to model not only how various distributional factors associate with language change, but how they causally affect it. In particular, we study slang, which is an informal language that is typically restricted to a specific group or social setting. We analyze the semantic change and frequency shift of slang words and compare them to those of standard, nonslang words. With causal discovery and causal inference techniques, we measure the effect that word type (slang/nonslang) has on both semantic change and frequency shift, as well as its relationship to frequency, polysemy and part of speech. Our analysis provides some new insights in the study of language change, e.g., we show that slang words undergo less semantic change but tend to have larger frequency shifts over time.",
+    pdf={https://aclanthology.org/2022.acl-long.101.pdf},
+    selected={true},
+    bibtex_show={true}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@inproceedings{pasti-etal-2023-intersection,
+    abbr={EACL},
+    title = "On the Intersection of Context-Free and Regular Languages",
+    author = "Pasti, Clemente  and
+      Opedal, Andreas  and
+      Pimentel, Tiago  and
+      Vieira, Tim  and
+      Eisner, Jason  and
+      Cotterell, Ryan",
+    booktitle = "Proceedings of the Conference of the European Chapter of the Association for Computational Linguistics",
+    month = may,
+    year = "2023",
+    url = "https://aclanthology.org/2023.eacl-main.52",
+    doi = "10.18653/v1/2023.eacl-main.52",
+    abstract = "The Bar-Hillel construction is a classic result in formal language theory. It shows, by a simple construction, that the intersection of a context-free language and a regular language is itself context-free. In the construction, the regular language is specified by a finite-state automaton. However, neither the original construction (Bar-Hillel et al., 1961) nor its weighted extension (Nederhof and Satta, 2003) can handle finite-state automata with ε-arcs. While it is possible to remove ε-arcs from a finite-state automaton efficiently without modifying the language, such an operation modifies the automaton’s set of paths. We give a construction that generalizes the Bar- Hillel in the case the desired automaton has ε-arcs, and further prove that our generalized construction leads to a grammar that encodes the structure of both the input automaton and grammar while retaining the asymptotic size of the original construction.",
+    selected={false},
+    pdf={https://aclanthology.org/2023.eacl-main.52.pdf},
+    bibtex_show={true}
 }

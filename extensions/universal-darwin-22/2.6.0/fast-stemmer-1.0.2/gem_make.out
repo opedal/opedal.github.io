@@ -1,0 +1,12 @@
+current directory: /Users/andreasopedal/Documents/PhD/website/opedal.github.io/gems/fast-stemmer-1.0.2/ext
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20231214-77337-11ef2oe.rb extconf.rb
+creating Makefile
+
+current directory: /Users/andreasopedal/Documents/PhD/website/opedal.github.io/gems/fast-stemmer-1.0.2/ext
+make "DESTDIR=" clean
+
+current directory: /Users/andreasopedal/Documents/PhD/website/opedal.github.io/gems/fast-stemmer-1.0.2/ext
+make "DESTDIR="
+make: *** No rule to make target `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin22/ruby/config.h', needed by `porter.o'.  Stop.
+
+make failed, exit code 2
