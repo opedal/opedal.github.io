@@ -3,6 +3,19 @@
 
 @string{aps = {American Physical Society,}}
 
+@misc{opedal2024language,
+      abbr={Preprint},
+      title={Do Language Models Exhibit the Same Cognitive Biases in Problem Solving as Human Learners?}, 
+      author={Andreas Opedal* and Alessandro Stolfo* and Haruki Shirakami and Ying Jiao and Ryan Cotterell and Bernhard Schölkopf and Abulhair Saparov and Mrinmaya Sachan},
+      month=jan,
+      year={2024},
+      url={https://arxiv.org/abs/2401.18070},
+      selected={true},
+      abstract={There is increasing interest in employing large language models (LLMs) as cognitive models. For such purposes, it is central to understand which cognitive properties are well-modeled by LLMs, and which are not. In this work, we study the biases of LLMs in relation to those known in children when solving arithmetic word problems. Surveying the learning science literature, we posit that the problem-solving process can be split into three distinct steps: text comprehension, solution planning and solution execution. We construct tests for each one in order to understand which parts of this process can be faithfully modeled by current state-of-the-art LLMs. We generate a novel set of word problems for each of these tests, using a neuro-symbolic method that enables fine-grained control over the problem features. We find evidence that LLMs, with and without instruction-tuning, exhibit human-like biases in both the text-comprehension and the solution-planning steps of the solving process, but not during the final step which relies on the problem's arithmetic expressions (solution execution).},
+      pdf={https://arxiv.org/pdf/2401.18070.pdf},
+      bibtex_show={true}
+}
+
 @inproceedings{opedal2023lct,
     abbr={EMNLP},
   title = "An Exploration of Left-Corner Transformations",
@@ -22,6 +35,25 @@
   selected={true},
   pdf={https://aclanthology.org/2023.emnlp-main.827.pdf},
   bibtex_show={true}
+}
+
+@inproceedings{opedal-etal-2023-efficient,
+    abbr={ACL},
+    title = "Efficient Semiring-Weighted {E}arley Parsing",
+    author = "Opedal, Andreas  and
+      Zmigrod, Ran  and
+      Vieira, Tim  and
+      Cotterell, Ryan  and
+      Eisner, Jason",
+    booktitle = "Proceedings of the Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    url = "https://aclanthology.org/2023.acl-long.204",
+    doi = "10.18653/v1/2023.acl-long.204",
+    abstract="We present Earley’s (1970) context-free parsing algorithm as a deduction system, incorporating various known and new speed-ups. In particular, our presentation supports a known worst-case runtime improvement from Earley’s (1970) O(N3|G||R|), which is unworkable for the large grammars that arise in natural language processing, to O(N3|G|), which matches the complexity of CKY on a binarized version of the grammar G. Here N is the length of the sentence, |R| is the number of productions in G, and |G| is the total length of those productions. We also provide a version that achieves runtime of O(N3|M|) with |M| ≤ |G| when the grammar is represented compactly as a single finite-state automaton M (this is partly novel). We carefully treat the generalization to semiring-weighted deduction, preprocessing the grammar like Stolcke (1995) to eliminate the possibility of deduction cycles, and further generalize Stolcke’s method to compute the weights of sentence prefixes. We also provide implementation details for efficient execution, ensuring that on a preprocessed grammar, the semiring-weighted versions of our methods have the same asymptotic runtime and space requirements as the unweighted methods, including sub-cubic runtime on some grammars.",
+    pdf={https://aclanthology.org/2023.acl-long.204.pdf},
+    selected={true},
+    bibtex_show={true}
 }
 
 @inproceedings{opedal-etal-2023-world,
@@ -45,22 +77,23 @@
     bibtex_show={true}
 }
 
-@inproceedings{opedal-etal-2023-efficient,
-    abbr={ACL},
-    title = "Efficient Semiring-Weighted {E}arley Parsing",
-    author = "Opedal, Andreas  and
-      Zmigrod, Ran  and
+@inproceedings{pasti-etal-2023-intersection,
+    abbr={EACL},
+    title = "On the Intersection of Context-Free and Regular Languages",
+    author = "Pasti, Clemente  and
+      Opedal, Andreas  and
+      Pimentel, Tiago  and
       Vieira, Tim  and
-      Cotterell, Ryan  and
-      Eisner, Jason",
-    booktitle = "Proceedings of the Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-    month = jul,
+      Eisner, Jason  and
+      Cotterell, Ryan",
+    booktitle = "Proceedings of the Conference of the European Chapter of the Association for Computational Linguistics",
+    month = may,
     year = "2023",
-    url = "https://aclanthology.org/2023.acl-long.204",
-    doi = "10.18653/v1/2023.acl-long.204",
-    abstract="We present Earley’s (1970) context-free parsing algorithm as a deduction system, incorporating various known and new speed-ups. In particular, our presentation supports a known worst-case runtime improvement from Earley’s (1970) O(N3|G||R|), which is unworkable for the large grammars that arise in natural language processing, to O(N3|G|), which matches the complexity of CKY on a binarized version of the grammar G. Here N is the length of the sentence, |R| is the number of productions in G, and |G| is the total length of those productions. We also provide a version that achieves runtime of O(N3|M|) with |M| ≤ |G| when the grammar is represented compactly as a single finite-state automaton M (this is partly novel). We carefully treat the generalization to semiring-weighted deduction, preprocessing the grammar like Stolcke (1995) to eliminate the possibility of deduction cycles, and further generalize Stolcke’s method to compute the weights of sentence prefixes. We also provide implementation details for efficient execution, ensuring that on a preprocessed grammar, the semiring-weighted versions of our methods have the same asymptotic runtime and space requirements as the unweighted methods, including sub-cubic runtime on some grammars.",
-    pdf={https://aclanthology.org/2023.acl-long.204.pdf},
-    selected={true},
+    url = "https://aclanthology.org/2023.eacl-main.52",
+    doi = "10.18653/v1/2023.eacl-main.52",
+    abstract = "The Bar-Hillel construction is a classic result in formal language theory. It shows, by a simple construction, that the intersection of a context-free language and a regular language is itself context-free. In the construction, the regular language is specified by a finite-state automaton. However, neither the original construction (Bar-Hillel et al., 1961) nor its weighted extension (Nederhof and Satta, 2003) can handle finite-state automata with ε-arcs. While it is possible to remove ε-arcs from a finite-state automaton efficiently without modifying the language, such an operation modifies the automaton’s set of paths. We give a construction that generalizes the Bar- Hillel in the case the desired automaton has ε-arcs, and further prove that our generalized construction leads to a grammar that encodes the structure of both the input automaton and grammar while retaining the asymptotic size of the original construction.",
+    selected={false},
+    pdf={https://aclanthology.org/2023.eacl-main.52.pdf},
     bibtex_show={true}
 }
 
@@ -84,26 +117,6 @@
     pages = "1422--1442",
     abstract = "Languages are continuously undergoing changes, and the mechanisms that underlie these changes are still a matter of debate. In this work, we approach language evolution through the lens of causality in order to model not only how various distributional factors associate with language change, but how they causally affect it. In particular, we study slang, which is an informal language that is typically restricted to a specific group or social setting. We analyze the semantic change and frequency shift of slang words and compare them to those of standard, nonslang words. With causal discovery and causal inference techniques, we measure the effect that word type (slang/nonslang) has on both semantic change and frequency shift, as well as its relationship to frequency, polysemy and part of speech. Our analysis provides some new insights in the study of language change, e.g., we show that slang words undergo less semantic change but tend to have larger frequency shifts over time.",
     pdf={https://aclanthology.org/2022.acl-long.101.pdf},
-    selected={true},
-    bibtex_show={true}
-}
-
-@inproceedings{pasti-etal-2023-intersection,
-    abbr={EACL},
-    title = "On the Intersection of Context-Free and Regular Languages",
-    author = "Pasti, Clemente  and
-      Opedal, Andreas  and
-      Pimentel, Tiago  and
-      Vieira, Tim  and
-      Eisner, Jason  and
-      Cotterell, Ryan",
-    booktitle = "Proceedings of the Conference of the European Chapter of the Association for Computational Linguistics",
-    month = may,
-    year = "2023",
-    url = "https://aclanthology.org/2023.eacl-main.52",
-    doi = "10.18653/v1/2023.eacl-main.52",
-    abstract = "The Bar-Hillel construction is a classic result in formal language theory. It shows, by a simple construction, that the intersection of a context-free language and a regular language is itself context-free. In the construction, the regular language is specified by a finite-state automaton. However, neither the original construction (Bar-Hillel et al., 1961) nor its weighted extension (Nederhof and Satta, 2003) can handle finite-state automata with ε-arcs. While it is possible to remove ε-arcs from a finite-state automaton efficiently without modifying the language, such an operation modifies the automaton’s set of paths. We give a construction that generalizes the Bar- Hillel in the case the desired automaton has ε-arcs, and further prove that our generalized construction leads to a grammar that encodes the structure of both the input automaton and grammar while retaining the asymptotic size of the original construction.",
     selected={false},
-    pdf={https://aclanthology.org/2023.eacl-main.52.pdf},
     bibtex_show={true}
 }
