@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a 2nd year PhD student at ETH Zurich, advised by [Mrinmaya Sachan](https://www.mrinmaya.io/), [Bernhard Schölkopf](https://is.mpg.de/~bs) and [Ryan Cotterell](https://rycolab.io/), and supported by the [Max Planck ETH Center for Learning Systems](https://learning-systems.org/). I work on natural language processing and computational linguistics.
+I am a 2nd year PhD student at ETH Zurich, advised by [Ryan Cotterell](https://rycolab.io/), [Mrinmaya Sachan](https://www.mrinmaya.io/), and [Bernhard Schölkopf](https://is.mpg.de/~bs), and supported by the [Max Planck ETH Center for Learning Systems](https://learning-systems.org/). I work on natural language processing and computational linguistics.
 
 Currently, I am particularly interested in formalisms to represent linguistic structure and their related algorithms. I want to use such tools to understand the mechanisms behind language processing and reasoning, both in the human mind (**cognitive modeling**) and in language models (**interpretability**). 
 
