@@ -3,6 +3,21 @@
 
 @string{aps = {American Physical Society,}}
 
+@misc{opedal2024role,
+      abbr={Preprint},
+      title={On the Role of Context in Reading Time Prediction}, 
+      author={Andreas Opedal and Eleanor Chodroff and Ryan Cotterell and Ethan Wilcox},
+      year={2024},
+      eprint={2409.08160},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2409.08160}, 
+      abstract={We present a new perspective on how readers integrate context during real-time language comprehension. Our proposals build on surprisal theory, which posits that the processing effort of a linguistic unit (e.g., a word) is an affine function of its in-context information content. We first observe that surprisal is only one out of many potential ways that a contextual predictor can be derived from a language model. Another one is the pointwise mutual information (PMI) between a unit and its context, which turns out to yield the same predictive power as surprisal when controlling for unigram frequency. Moreover, both PMI and surprisal are correlated with frequency. This means that neither PMI nor surprisal contains information about context alone. In response to this, we propose a technique where we project surprisal onto the orthogonal complement of frequency, yielding a new contextual predictor that is uncorrelated with frequency. Our experiments show that the proportion of variance in reading times explained by context is a lot smaller when context is represented by the orthogonalized predictor. From an interpretability standpoint, this indicates that previous studies may have overstated the role that context has in predicting reading times.},
+      selected={true},
+      pdf={https://arxiv.org/pdf/2409.08160},
+      bibtex_show={true}
+}
+
 @inproceedings{opedal2024language,
       abbr={ICML},
       title={Do Language Models Exhibit the Same Cognitive Biases in Problem Solving as Human Learners?}, 
@@ -73,7 +88,7 @@
     doi = "10.18653/v1/2023.findings-acl.579",
     pages = "9088--9115",
     abstract = "Solving math story problems is a complex task for students and NLP models alike, requiring them to understand the world as described in the story and reason over it to compute an answer. Recent years have seen impressive performance on automatically solving these problems with large pre-trained language models and innovative techniques to prompt them. However, it remains unclear if these models possess accurate representations of mathematical concepts. This leads to lack of interpretability and trustworthiness which impedes their usefulness in various applications. In this paper, we consolidate previous work on categorizing and representing math story problems and develop MathWorld, which is a graph-based semantic formalism specific for the domain of math story problems. With MathWorld, we can assign world models to math story problems which represent the situations and actions introduced in the text and their mathematical relationships. We combine math story problems from several existing datasets and annotate a corpus of 1,019 problems and 3,204 logical forms with MathWorld. Using this data, we demonstrate the following use cases of MathWorld: (1) prompting language models with synthetically generated question-answer pairs to probe their reasoning and world modeling abilities, and (2) generating new problems by using the world models as a design space.",
-    selected={true},
+    selected={false},
     pdf={https://aclanthology.org/2023.findings-acl.579.pdf},
     bibtex_show={true}
 }
