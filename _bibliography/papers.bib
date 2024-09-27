@@ -3,11 +3,15 @@
 
 @string{aps = {American Physical Society,}}
 
-@misc{opedal2024role,
-      abbr={Preprint},
+@inproceedings{opedal2024role,
+      abbr={EMNLP},
       title={On the Role of Context in Reading Time Prediction}, 
       author={Andreas Opedal and Eleanor Chodroff and Ryan Cotterell and Ethan Wilcox},
+      booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+      month=nov,
       year={2024},
+      publisher = "Association for Computational Linguistics",
+      address = "Miami",
       eprint={2409.08160},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
@@ -15,6 +19,25 @@
       abstract={We present a new perspective on how readers integrate context during real-time language comprehension. Our proposals build on surprisal theory, which posits that the processing effort of a linguistic unit (e.g., a word) is an affine function of its in-context information content. We first observe that surprisal is only one out of many potential ways that a contextual predictor can be derived from a language model. Another one is the pointwise mutual information (PMI) between a unit and its context, which turns out to yield the same predictive power as surprisal when controlling for unigram frequency. Moreover, both PMI and surprisal are correlated with frequency. This means that neither PMI nor surprisal contains information about context alone. In response to this, we propose a technique where we project surprisal onto the orthogonal complement of frequency, yielding a new contextual predictor that is uncorrelated with frequency. Our experiments show that the proportion of variance in reading times explained by context is a lot smaller when context is represented by the orthogonalized predictor. From an interpretability standpoint, this indicates that previous studies may have overstated the role that context has in predicting reading times.},
       selected={true},
       pdf={https://arxiv.org/pdf/2409.08160},
+      bibtex_show={true}
+}
+
+@inproceedings{giulianelli2024generalized,
+      abbr={EMNLP},
+      title={Generalized Measures of Anticipation and Responsivity in Online Language Processing}, 
+      author={Mario Giulianelli and Andreas Opedal and Ryan Cotterell},
+      booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+      month = nov,
+      year={2024},
+      publisher = "Association for Computational Linguistics",
+      address = "Miami",
+      eprint={2409.10728},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      abstract={We introduce a generalization of classic information-theoretic measures of predictive uncertainty in online language processing, based on the simulation of expected continuations of incremental linguistic contexts. Our framework provides a formal definition of anticipatory and responsive measures, and it equips experimenters with the tools to define new, more expressive measures beyond standard next-symbol entropy and surprisal. While extracting these standard quantities from language models is convenient, we demonstrate that using Monte Carlo simulation to estimate alternative responsive and anticipatory measures pays off empirically: New special cases of our generalized formula exhibit enhanced predictive power compared to surprisal for human cloze completion probability as well as ELAN, LAN, and N400 amplitudes, and greater complementarity with surprisal in predicting reading times. },
+      selected={false},
+      url={https://arxiv.org/abs/2409.10728}, 
+      pdf={https://arxiv.org/pdf/2409.10728},
       bibtex_show={true}
 }
 
