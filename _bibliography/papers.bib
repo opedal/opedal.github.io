@@ -3,16 +3,17 @@
 
 @string{aps = {American Physical Society,}}
 
-@misc{opedal2024mathgap,
-      abbr={Preprint},
-      title={MathGAP: Out-of-Distribution Evaluation on Problems with Arbitrarily Complex Proofs}, 
+@inproceedings{opedal2025mathgap,
+      abbr={ICLR},
+      title={Math{GAP}: Out-of-Distribution Evaluation on Problems with Arbitrarily Complex Proofs}, 
       author={Andreas Opedal* and Haruki Shirakami* and Bernhard Schölkopf and Abulhair Saparov and Mrinmaya Sachan},
-      year={2024},
+      year={2025},
+      booktitle={The Thirteenth International Conference on Learning Representations},
       eprint={2410.13502},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2410.13502},
-      abstract={Large language models (LLMs) can solve arithmetic word problems with high accuracy, but little is known about how well they generalize to problems that are more complex than the ones on which they have been trained. Empirical investigations of such questions are impeded by two major flaws of current evaluations: (i) much of the evaluation data is contaminated, in the sense that it has already been seen during training, and (ii) benchmark datasets do not capture how problem proofs may be arbitrarily complex in various ways. As a step towards addressing these issues, we present a framework for evaluating LLMs on problems that have arbitrarily complex arithmetic proofs, called MathGAP. MathGAP generates problems that follow fixed proof specifications---along with chain-of-thought reasoning annotations---enabling systematic studies on generalization with respect to arithmetic proof complexity. We apply MathGAP to analyze how in-context learning interacts with generalization to problems that have more complex proofs. We find that among the models tested, most show a significant decrease in performance as proofs get deeper and wider. This effect is more pronounced in complex, nonlinear proof structures, which are challenging even for GPT-4o. Surprisingly, providing in-context examples from the same distribution as the test set is not always beneficial for performance. In particular, zero-shot prompting as well as demonstrating a diverse range of examples that are less complex than the test data sometimes yield similar or higher accuracies.},
+      abstract={Large language models (LLMs) can solve arithmetic word problems with high accuracy, but little is known about how well they generalize to more complex problems. This is difficult to study, as (i) much of the available evaluation data has already been seen by the most capable models during training, and (ii) existing benchmarks do not capture how problem proofs may be arbitrarily complex in various ways. In this paper, we present a data-generation framework for evaluating LLMs on problems with arbitrarily complex arithmetic proofs, called MathGAP. MathGAP generates problem statements and chain-of-thought reasoning traces according to specifications about their arithmetic proof structure, enabling systematic studies on easy-to-hard generalization with respect to complexity of proof trees. Using MathGAP, we find that LLMs show a significant decrease in performance as proofs get deeper and wider. This effect is more pronounced in complex, nonlinear proof structures, which are challenging even for the most capable models. The models are also sensitive to simple changes in sentence ordering. However, they remain capable of solving some complex problems, suggesting that reasoning generalization is noisy.},
       selected={true},
       pdf={https://arxiv.org/pdf/2410.13502},
       bibtex_show={true}
@@ -86,7 +87,7 @@
   url = "https://aclanthology.org/2023.emnlp-main.827",
   pages = "13393--13427",
   abstract="The left-corner transformation (Rosenkrantz and Lewis, 1970) is used to remove left recursion from context-free grammars, which is an important step towards making the grammar parsable top-down with simple techniques. This paper generalizes prior left-corner transformations to support semiring-weighted production rules and to provide finer-grained control over which left corners may be moved. Our generalized left-corner transformation (GLCT) arose from unifying the left-corner transformation and speculation transformation (Eisner and Blatz, 2007), originally for logic programming. Our new transformation and speculation define equivalent weighted languages. Yet, their derivation trees are structurally different in an important way: GLCT replaces left recursion with right recursion, and speculation does not. We also provide several technical results regarding the formal relationships between the outputs of GLCT, speculation, and the original grammar. Lastly, we empirically investigate the efficiency of GLCT for left-recursion elimination from grammars of nine languages. Code: https://github.com/rycolab/left-corner",
-  selected={true},
+  selected={false},
   pdf={https://aclanthology.org/2023.emnlp-main.827.pdf},
   bibtex_show={true}
 }
